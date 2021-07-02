@@ -1,0 +1,9 @@
+language: Ruby
+dest: focal
+arch:
+  - ppc64le
+script:
+  - ./config
+  - make
+  - sudo make install
+  - make test
